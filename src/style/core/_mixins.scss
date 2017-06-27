@@ -1,0 +1,37 @@
+@mixin clearfix {
+  &::before,
+  &::after {
+    display: table;
+    content: '';
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+// ===== responsive =====
+@mixin max($width) {
+  @media screen and (max-width: $width + 'px') {
+    @content;
+  }
+}
+@mixin min($width) {
+  @media screen and (min-width: $width + 'px') {
+    @content;
+  }
+}
+
+// ===== ol style =====
+@mixin counter($var) {
+  counter-reset: $var;
+  & > li::before {
+    content: counter($var) ') ';
+    counter-increment: $var;
+  }
+}
+
+// ===== placeholder style =====
+@mixin placeholder-color($color) {
+  color: $color;
+  opacity: 1;
+}

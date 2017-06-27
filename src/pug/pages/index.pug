@@ -1,0 +1,19 @@
+extends ../_template
+
+block variables
+  - var title = 'Lets Go'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main
+    .section#four(style="min-height:100vh; background-color:#bada55; padding-top: 00px;")
+      .container
+    .section#two(style="min-height:100vh; background-color:#639;")
+    .section#three(style="min-height:100vh; background-color:#c0ffee;")
+    .section#one(style="min-height:100vh; background-color:#369;")
+  //end   content
+
+  include ../elements/popup
+  include ../sections/footer
