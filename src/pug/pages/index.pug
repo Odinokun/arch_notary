@@ -1,19 +1,16 @@
 extends ../_template
 
 block variables
-  - var title = 'Lets Go'
+  - var title = 'Приватний нотаріус Гордієнко О.В.'
 
 block content
-  include ../sections/header
+  include ../elements/stickyHeader
   
   //begin content
-  section.main
+  section.main#div
     .section#four(style="min-height:100vh; background-color:#bada55; padding-top: 00px;")
       .container
-    .section#two(style="min-height:100vh; background-color:#639;")
     .section#three(style="min-height:100vh; background-color:#c0ffee;")
     .section#one(style="min-height:100vh; background-color:#369;")
+    .section#two(style="min-height:100vh; background-color:#639;")
   //end   content
-
-  include ../elements/popup
-  include ../sections/footer

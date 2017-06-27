@@ -1,15 +1,29 @@
-.burger__menu {
-  font-family: $font, sans-serif;
-  font-size: 22px;
-  position: absolute;
-  top: 4px;
-  left: 50px;
-  letter-spacing: 1px;
-  color: #fafafa;
-}
 .burger {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  display: none;
   width: 130px;
   height: 40px;
+
+  @include max(750) {
+    display: block;
+  }
+}
+.burger__menu {
+  font-family: $font-title, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 7px;
+  right: -90px;
+  letter-spacing: 1px;
+  color: $text-light-color;
+  transition: right .5s, opacity .4s;
+  
+}
+.burger input:checked + label .burger__menu {
+  right: -200px;
+  opacity: 0;
 }
 .burger input {
   display: none;
@@ -32,7 +46,7 @@
   margin-top: -1px;
   content: '';
   border-radius: 2px;
-  background: #fafafa;
+  background: $text-light-color;
 }
 .burger label:before {
   animation: animationOneReverse 1s ease forwards;
@@ -73,7 +87,7 @@
   margin-top: -1px;
   content: '';
   border-radius: 2px;
-  background: #fafafa;
+  background: $text-light-color;
 }
 .burger label:after {
   animation: animationTwoReverse 1s ease forwards;
@@ -114,7 +128,7 @@
   content: '';
   animation: animationBurgerTopReverse 1s ease forwards;
   border-radius: 2px;
-  background: #fafafa;
+  background: $text-light-color;
 }
 @keyframes animationBurgerTopReverse {
   0%,
@@ -157,7 +171,7 @@
   content: '';
   animation: animationBurgerBottomReverse 1s ease forwards;
   border-radius: 2px;
-  background: #fafafa;
+  background: $text-light-color;
 }
 @keyframes animationBurgerBottomReverse {
   0%,

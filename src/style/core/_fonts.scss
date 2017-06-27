@@ -1,31 +1,56 @@
 @font-face {
-  font-family: OpenSans;
-  src: url('../fonts/OpenSans/OpenSans.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans.woff')  format('woff');
+  font-family: AHuxleyCapsBold;
+  src:  url('../fonts/AHuxleyCapsBold.woff2') format('woff2'),
+        url('../fonts/AHuxleyCapsBold.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: AstakhovFirstOneStripe;
+  src:  url('../fonts/AstakhovFirstOneStripe.woff2') format('woff2'),
+        url('../fonts/AstakhovFirstOneStripe.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans-Light;
-  src: url('../fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Light.woff')  format('woff');
+  font-family: AstakhovFirstSimple;
+  src:  url('../fonts/AstakhovFirstSimple.woff2') format('woff2'),
+        url('../fonts/AstakhovFirstSimple.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans-Bold;
-  src: url('../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Bold.woff')  format('woff');
+  font-family: PosteRetro;
+  src:  url('../fonts/PosteRetro.woff2') format('woff2'),
+        url('../fonts/PosteRetro.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans-Semibold;
-  src: url('../fonts/OpenSans/OpenSans-Semibold.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Semibold.woff')  format('woff');
+  font-family: Verdana;
+  src:  url('../fonts/Verdana.woff2') format('woff2'),
+        url('../fonts/Verdana.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Verdana-Bold;
+  src:  url('../fonts/Verdana-Bold.woff2') format('woff2'),
+        url('../fonts/Verdana-Bold.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Verdana-Italic;
+  src:  url('../fonts/Verdana-Italic.woff2') format('woff2'),
+        url('../fonts/Verdana-Italic.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }

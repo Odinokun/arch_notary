@@ -20,8 +20,15 @@ body {
   flex-direction: column;
   min-width: 320px;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 body.fix {
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 h1,
 h2,
@@ -32,6 +39,7 @@ h6,
 p {
   font-weight: 400;
   margin: 0 0 10px 0;
+  background-color: #81B3B2;
 }
 h1 {
   font-family: $font-bold;

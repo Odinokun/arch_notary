@@ -24,7 +24,7 @@ $(function() {
   // end   Popup
 
   // begin Sticky header
-  // require('./modules/stickyHeader')();
+  require('./modules/stickyHeader')();
   // end   Sticky header
 
   // begin Animate.css
@@ -35,6 +35,10 @@ $(function() {
   // begin Fancybox3
   // require('./modules/fancybox')();
   // end   Fancybox3
+
+  // begin mobile menu
+  require('./modules/mobileMenu')();
+  // end   mobile menu
 
   /////
   // ***** END Standarts scripts *****
