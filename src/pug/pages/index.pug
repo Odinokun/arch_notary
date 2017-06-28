@@ -7,10 +7,26 @@ block content
   include ../elements/stickyHeader
   
   //begin content
-  section.main#div
-    .section#four(style="min-height:100vh; background-color:#bada55; padding-top: 00px;")
+  section.main
+    section.hero
       .container
-    .section#three(style="min-height:100vh; background-color:#c0ffee;")
-    .section#one(style="min-height:100vh; background-color:#369;")
-    .section#two(style="min-height:100vh; background-color:#639;")
+        .hero-banner
+          h1.hero__title Приватний нотаріус
+          h2.hero__subtitle Гордієнко Ольга Валеріївна
+          .ribbon
+            h3.ribbon__text Київський міський нотаріальний округ
+
+        .hero__phone
+          a.hero__phone-link(href="tel:+380962374233") 
+            span тел. 
+            =" " 
+            |067-969-99-03
+
+
+
+    //- .section#four(style="min-height:100vh; background-color:#bada55; padding-top: 00px;")
+      .container
+    //- .section#three(style="min-height:100vh; background-color:#c0ffee;")
+    //- .section#one(style="min-height:100vh; background-color:#369;")
+    //- .section#two(style="min-height:100vh; background-color:#639;")
   //end   content

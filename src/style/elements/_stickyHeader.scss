@@ -243,15 +243,15 @@
 }
 
 .header__phone {
-  position: absolute;
-  z-index: 1;
-  top: 5px;
-  right: 15px;
-  display: none;
+  // position: absolute;
+  // z-index: 1;
+  // top: 5px;
+  // right: 15px;
+  // display: none;
   // @include m1000() {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  // display: flex;
+  // align-items: center;
+  // cursor: pointer;
   // }
   &:hover {
     .header__phone-icon {
@@ -265,19 +265,19 @@
 .header__phone-icon {
   // fill: $brand-color;
   // @include m350() {
-  display: none;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  transition: fill .5s;
+  // display: none;
+  // width: 40px;
+  // height: 40px;
+  // margin-right: 10px;
+  // transition: fill .5s;
   // }
 }
 .header__phone-link {
   // font-family: $font-title;
-  line-height: 1.4;
-  margin-top: 3px;
-  transition: color .5s;
-  text-decoration: none;
+  // line-height: 1.4;
+  // margin-top: 3px;
+  // transition: color .5s;
+  // text-decoration: none;
   // color: $brand-color;
   // @include font-size(28);
 }
