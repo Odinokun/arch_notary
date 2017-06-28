@@ -1,14 +1,11 @@
 //begin sticky header like a mobile FB
-//- header.header#header
-  .container
-    include ../elements/burger
-    .header__phone
-      svg.header__phone-icon
-        use(xlink:href="assets/img/sprite.svg#phone")
-      a.header__phone-link(href="tel:+380962374233") 067-969-99-03
 header.sticky-header
   .container
     include ../elements/burger
+    a.header__phone(href="tel:+380962374233") 
+      svg.header__phone-icon
+        use(xlink:href="assets/img/sprite.svg#phone")
+      span 067-969-99-03
     nav.menu
       ul.menu__list
         li.menu__item

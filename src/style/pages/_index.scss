@@ -21,7 +21,7 @@
     padding-top: 120px;
 
     @include max(1023) {
-      padding-top: 50px;
+      padding-top: 20px;
     }
   }
 }
@@ -152,6 +152,7 @@
   font-size: 22px;
   display: inline-block;
   transition: .5s;
+  animation: shakeHeroPhone 15s infinite;
   text-decoration: none;
   color: $text-light-color;
   text-shadow: 2px 2px 2px $shadow-color;
@@ -160,18 +161,16 @@
     font-size: 18px;
     margin-top: -20px;
   }
+  &:hover {
+    animation: none;
+    text-shadow: none;
+  }
   span {
     font-size: 16px;
 
     @include max(500) {
       font-size: 12px;
     }
-  }
-}
-.hero__phone-link {
-  animation: shakeHeroPhone 15s infinite;
-  &:hover {
-    animation: none;
   }
 }
 @keyframes shakeHeroPhone {

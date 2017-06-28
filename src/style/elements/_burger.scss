@@ -9,6 +9,9 @@
   @include max(750) {
     display: block;
   }
+  @include max(375) {
+    top: 16px;
+  }
 }
 .burger__menu {
   font-family: $font-title, sans-serif;
@@ -16,13 +19,19 @@
   position: absolute;
   top: 7px;
   right: -90px;
+  transition: right .5s, opacity .4s;
   letter-spacing: 1px;
   color: $text-light-color;
-  transition: right .5s, opacity .4s;
-  
+
+  @include max(375) {
+    font-size: 17px;
+    top: 5px;
+    right: -70px;
+    letter-spacing: 1.3px;
+  }
 }
 .burger input:checked + label .burger__menu {
-  right: -200px;
+  right: -150px;
   opacity: 0;
 }
 .burger input {
@@ -35,6 +44,11 @@
   height: 40px;
   cursor: pointer;
   background: transparent;
+
+  @include max(375) {
+    width: 30px;
+    height: 33px;
+  }
 }
 /* Exit Icon */
 .burger label:before,
@@ -47,6 +61,11 @@
   content: '';
   border-radius: 2px;
   background: $text-light-color;
+
+  @include max(375) {
+    width: 30px;
+    height: 2px;
+  }
 }
 .burger label:before {
   animation: animationOneReverse 1s ease forwards;
@@ -88,6 +107,11 @@
   content: '';
   border-radius: 2px;
   background: $text-light-color;
+
+  @include max(375) {
+    width: 30px;
+    height: 2px;
+  }
 }
 .burger label:after {
   animation: animationTwoReverse 1s ease forwards;
@@ -129,6 +153,11 @@
   animation: animationBurgerTopReverse 1s ease forwards;
   border-radius: 2px;
   background: $text-light-color;
+
+  @include max(375) {
+    width: 30px;
+    height: 2px;
+  }
 }
 @keyframes animationBurgerTopReverse {
   0%,
@@ -172,6 +201,11 @@
   animation: animationBurgerBottomReverse 1s ease forwards;
   border-radius: 2px;
   background: $text-light-color;
+
+  @include max(375) {
+    width: 30px;
+    height: 2px;
+  }
 }
 @keyframes animationBurgerBottomReverse {
   0%,
