@@ -1,1 +1,38 @@
-
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: -1000px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 8px 10px;
+  transition: bottom 5s;
+  transition-delay: 10s;
+  background-color: #369;
+  box-shadow: 0 1px 10px 0 $shadow-color;
+  &.active {
+    bottom: 0;
+  }
+}
+.main-index {
+  .footer {
+    background-image: url('../img/bg-green.jpg');
+  }
+}
+.copyright__link,
+.copyright {
+  font-family: $font-title;
+  transition: all .5s;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: $text-light-color;
+  text-shadow: 2px 2px 2px $shadow-color;
+  &:hover {
+    color: $link-color-hov;
+    text-shadow: none;
+    .copyright {
+      color: $text-light-color;
+      text-shadow: none;
+    }
+  }
+}

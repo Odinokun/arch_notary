@@ -120,7 +120,8 @@ textarea {
 }
 .main {
   position: relative;
-  flex: 1 0 auto;
+  // flex: 1 0 auto;
+  overflow: hidden;
 }
 .container {
   position: relative;
@@ -135,9 +136,4 @@ textarea {
   @include max(425) {
     padding: 10px;
   }
-}
-.header,
-.page-header,
-.footer {
-  flex: 0 0 auto;
 }
