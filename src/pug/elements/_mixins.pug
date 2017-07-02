@@ -1,0 +1,8 @@
+mixin services__item(bgImg, title)
+  .services__item
+    .services__pic(style=`${bgImg}`)
+    .services__icon
+      svg
+        use(xlink:href="assets/img/sprite.svg#pen")
+    h3.services__title #{title}
+    a(href="#").services__link

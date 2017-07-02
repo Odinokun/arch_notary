@@ -1,17 +1,14 @@
 // ***** main colors *******
-$brand-color: #81b3b2;
-$light-color: #f6edd8;
-$shadow-color: #3f3f3f;
+$brand: #81b3b2;
+$light: #f6edd8;
+$shadow: #3f3f3f;
 
 // ***** text colors *******
-$text-color: #3f3f3f;
-$text-light-color: #f6edd8;
-$text-highlight-color: #d55534;
-$link-color: #d55534;
-$link-color-hov: #b14225;
-
-
-
+$text: #3f3f3f;
+$text-light: #f6edd8;
+$text-highlight: #d55534;
+$link: #d55534;
+$link-hover: #b14225;
 
 // ===== fonts =====
 $font: 'Verdana', sans-serif;
@@ -19,6 +16,7 @@ $font-bold: 'Verdana-Bold', sans-serif;
 $font-italic: 'Verdana-Light', sans-serif;
 $font-title: 'AstakhovFirstSimple', sans-serif;
 $font-hero: 'PosteRetro', sans-serif;
+
 // ===== sizes =====
 $radius-button: 5px;
 $radius-tab: 5px;

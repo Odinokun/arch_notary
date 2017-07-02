@@ -11,7 +11,7 @@
   transition-property: height, top;
   text-align: center;
   background-image: url('../img/bg-green.jpg');
-  box-shadow: 0 1px 10px 0 $shadow-color;
+  box-shadow: 0 1px 10px 0 $shadow;
 
   @include max(1023) {
     height: 60px;
@@ -66,7 +66,7 @@
   display: none;
   align-items: center;
   text-decoration: none;
-  color: $text-light-color;
+  color: $text-light;
 
   @include max(750) {
     display: flex;
@@ -79,7 +79,7 @@
       display: inline-block;
       animation: shakeHeaderPhone .3s infinite;
 
-      fill: $link-color-hov;
+      fill: $link-hover;
     }
   }
 }
@@ -100,7 +100,7 @@
   margin-right: 10px;
   transition: fill .5s;
 
-  fill: $text-light-color;
+  fill: $text-light;
   @include max(375) {
     width: 35px;
     height: 35px;
@@ -148,8 +148,8 @@
   text-decoration: none;
   letter-spacing: 1.25px;
   text-transform: uppercase;
-  color: $text-light-color;
-  text-shadow: 3px 3px 3px $shadow-color;
+  color: $text-light;
+  text-shadow: 3px 3px 3px $shadow;
 
   @include max(1180) {
     font-size: 28px;
@@ -158,8 +158,8 @@
     font-size: 24px;
   }
   &:hover {
-    color: $text-light-color;
-    text-shadow: 2px 1px 2px $shadow-color;
+    color: $text-light;
+    text-shadow: 2px 1px 2px $shadow;
   }
 }
 .menu__item--logo {
@@ -182,7 +182,7 @@
     left: 0;
     content: '';
     border-radius: 50%;
-    box-shadow: 0 1px 10px 0 $shadow-color;
+    box-shadow: 0 1px 10px 0 $shadow;
   }
 }
 .menu__link--logo {
@@ -204,6 +204,6 @@
   background-position: 50% 50%;
   background-size: contain;
   box-shadow: 0 0 0 12px #585858,
-  0 0 0 13px $light-color,
+  0 0 0 13px $light,
   0 0 0 17px #585858;
 }

@@ -40,6 +40,10 @@ $(function() {
   require('./modules/mobileMenu')();
   // end   mobile menu
 
+  // begin всплывающий подвал
+  require('./modules/bubbleFooter')();
+  // end   всплывающий подвал
+
   /////
   // ***** END Standarts scripts *****
   /////

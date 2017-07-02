@@ -3,13 +3,29 @@ extends ../_template
 block variables
   - var title = 'Послуги'
 
+
 block content
   include ../elements/stickyHeader
   
   //begin content
-  section.main
-    section.services
-      .container
+  section.main.services
+    .container
+      header.top-header
+        .top-header__left
+          //- h2.section-header__title Нотаріальні послуги
+          h2.top-header__title Послуги
+        .top-header__right
+          p.top-header__text Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития. Равным образом укрепление и развитие структуры в значительной степени обуславливает создание позиций. Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития.
 
-
+      section.services__list
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Договори')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Заяви')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Довіренності')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Заповіти')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Копії')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Переклади')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Спадщина')
+        +services__item('background-image:url(assets/img/services-item-01.jpg)', 'Інші дії')
+        
+    include ../sections/footer
   //end   content

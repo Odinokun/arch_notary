@@ -1,23 +1,23 @@
 .footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: -1000px;
   left: 0;
   display: flex;
   justify-content: center;
   padding: 8px 10px;
-  transition: bottom 5s;
-  transition-delay: 10s;
-  background-color: #369;
-  box-shadow: 0 1px 10px 0 $shadow-color;
+  transition: bottom 3s;
+  transition-delay: 7s;
+  box-shadow: 0 1px 10px 0 $shadow;
   &.active {
     bottom: 0;
   }
 }
-.main-index {
-  .footer {
-    background-image: url('../img/bg-green.jpg');
-  }
+.hero .footer {
+  background-image: url('../img/bg-green.jpg');
+}
+.services .footer {
+  background-image: url('../img/bg-bezh.jpg');
 }
 .copyright__link,
 .copyright {
@@ -25,13 +25,13 @@
   transition: all .5s;
   text-decoration: none;
   letter-spacing: 1px;
-  color: $text-light-color;
-  text-shadow: 2px 2px 2px $shadow-color;
+  color: $text-light;
+  text-shadow: 2px 2px 2px $shadow;
   &:hover {
-    color: $link-color-hov;
+    color: $link-hover;
     text-shadow: none;
     .copyright {
-      color: $text-light-color;
+      color: $text-light;
       text-shadow: none;
     }
   }

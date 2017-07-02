@@ -20,9 +20,6 @@ module.exports = function() {
     }
     position = scrollTop;
   })
-  $(window).on('load', function() {
-    $('.footer').addClass('active');
-  })
   // end   Sticky Header
 
 };
