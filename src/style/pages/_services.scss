@@ -1,4 +1,5 @@
 .services {
+  background-color: #d5d0bd;
   background-image: url('../img/bg-bezh.jpg');
   &::before {
     position: absolute;
@@ -11,12 +12,6 @@
     pointer-events: none;
     border: 2px dashed #948c70;
   }
-}
-.test-box {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 30px;
-  background-color: #396;
 }
 .services__list {
   display: flex;

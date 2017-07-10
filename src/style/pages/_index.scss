@@ -1,15 +1,17 @@
 .hero {
   position: relative;
   display: flex;
-  padding-top: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: 80px;
+  background-color: #81b3b2;
   background-image: url('../img/bg-green.jpg');
-    @include max(768) {
-      padding-top: 50px;
-    }
+
+  @include max(768) {
+    padding-top: 50px;
+  }
   &::before {
     position: absolute;
     top: 10px;
@@ -24,7 +26,6 @@
   .container {
     height: 100%;
     padding-top: 0;
-
   }
 }
 .hero-banner {

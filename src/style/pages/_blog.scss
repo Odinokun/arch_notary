@@ -1,0 +1,63 @@
+.blog {
+  background-color: #b1ae7b;
+  background-image: url('../img/bg-olive.jpg');
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    pointer-events: none;
+    border: 2px dashed #77743c;
+  }
+}
+.blog__body {
+  display: flex;
+  @include max(1023) {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+// .blog-section__inn {
+//   display: flex;
+//   padding-top: 30px;
+// }
+// .blog-section__list {
+//   display: flex;
+//   width: 75%;
+
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+//   @include m1000() {
+//     width: 100%;
+//     padding-right: 0;
+//   }
+// }
+// .blog-section__footer {
+//   margin-top: -30px;
+//   text-align: center;
+
+//   @include m768() {
+//     margin-bottom: 10px;
+//   }
+//   a {
+//     font-family: $font-title;
+//     transition: all .5s;
+//     text-decoration: none;
+//     color: $highlight;
+//     border-bottom: 2px solid $highlight;
+
+//     @include font-size(24);
+//     @include m425() {
+//       @include font-size(20);
+//     }
+//     &:hover {
+//       border-bottom: 2px solid transparent;
+//     }
+//   }
+// }

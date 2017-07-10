@@ -68,7 +68,7 @@
 .top-header__text {
   font-size: 14px;
   line-height: 1.4;
-  margin: 5px;
+  margin: 5px 0;
 
   @include max(768) {
     font-size: 13px;

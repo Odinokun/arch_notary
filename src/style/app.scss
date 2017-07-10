@@ -16,8 +16,11 @@
 //section
 @import 'sections/footer';
 @import 'sections/header';
+@import 'sections/blogArticle';
+@import 'sections/blogAside';
 
 //pages
 @import 'pages/index';
 @import 'pages/inner';
 @import 'pages/services';
+@import 'pages/blog';
