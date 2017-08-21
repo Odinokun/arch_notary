@@ -1,0 +1,68 @@
+.servis {
+  padding-bottom: 50px;
+  background-color: #d5d0bd;
+  background-image: url('../img/bg-bezh.jpg');
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    pointer-events: none;
+    border: 2px dashed #948c70;
+  }
+}
+.servis-header {
+  margin-bottom: 40px;
+  padding-top: 60px;
+}
+.servis-header__title {
+  font-family: $font-title;
+  font-size: 50px;
+  line-height: 1.15;
+  text-align: center;
+
+  @include max(425) {
+    font-size: 36px;
+  }
+}
+.servis-type {
+  margin-bottom: 30px;
+}
+.servis-header__subtitle {
+  font-family: $font-title;
+  font-size: 30px;
+  line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  @include max(425) {
+    font-size: 24px;
+  }
+}
+.servis {
+  p {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .custom-ul__title {
+    margin-bottom: 10px;
+  }
+  .custom-ul {
+    margin-bottom: 20px;
+
+    @include max(425) {
+      font-size: 16px;
+    }
+  }
+  .custom-ul__li {
+    cursor: pointer;
+    &.active {
+      svg {
+        fill: $highlight;
+      }
+    }
+  }
+}

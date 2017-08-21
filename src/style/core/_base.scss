@@ -136,3 +136,44 @@ textarea {
     padding: 10px 20px;
   }
 }
+.custom-ol__title,
+.custom-ul__title {
+  font-family: $font-title;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.custom-ul {
+  margin: 0;
+  padding: 0;
+}
+.custom-ul__li   {
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  svg {
+    width: 20px;
+    transition: fill .5s;
+    height: 20px;
+    fill:$text;
+    margin-right: 20px;
+    flex: none;
+  }
+}
+.custom-ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @include counter(li);
+}
+.custom-ol__li   {
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  &::before {
+  font-family: $font-title;
+    color: $text;
+    margin-top: 1px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

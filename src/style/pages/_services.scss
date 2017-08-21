@@ -15,14 +15,16 @@
 }
 .services__list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 20px;
+  margin-right: -2%;
 
   @include max(1023) {
-    justify-content: space-around;
-    margin-right: -1.5%;
-    margin-left: -1.5%;
+    // justify-content: space-around;
+    // margin-right: -1.5%;
+    // margin-left: -1.5%;
+    margin-right: -3.21%;
   }
   @include max(750) {
     justify-content: space-between;
@@ -36,6 +38,7 @@
   position: relative;
   width: 23%;
   margin-bottom: 30px;
+  margin-right: 2%;
   padding: 5px;
   transition: all .5s;
   text-align: center;
@@ -47,9 +50,11 @@
 
   @include max(1023) {
     width: 30%;
+    margin-right: 3.21%;
   }
   @include max(750) {
     width: 48%;
+    margin-right: 0;
   }
   @include max(500) {
     width: 80%;

@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 40px;
+
   @include max(680) {
     margin-top: 0;
   }
@@ -41,9 +41,8 @@
 .contacts__left,
 .contacts__right {
   width: 48%;
-  // margin-bottom: 20px;
+
   @include max(680) {
-    
     width: 100%;
   }
 }
@@ -86,7 +85,7 @@ span.contacts__ahtung {
     }
   }
   svg {
-    flex: 0 0 auto;
+    flex: none;
     fill: $light;
     width: 35px;
     height: 35px;
@@ -94,7 +93,6 @@ span.contacts__ahtung {
   }
   a {
     font-size: 16px;
-    flex: 1 1 auto;
     margin-left: -35px;
     padding-left: 50px;
     transition: color .5s;
@@ -138,8 +136,8 @@ span.contacts__ahtung {
   }
 }
 .contacts__form-note {
-  margin: -10px 0 20px 0;
   font-size: 12px;
+  margin: -10px 0 20px 0;
 }
 
 .contacts__map {
