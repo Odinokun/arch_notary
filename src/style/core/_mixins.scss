@@ -32,6 +32,25 @@
 
 // ===== placeholder style =====
 @mixin placeholder-color($color) {
-  color: $color;
   opacity: 1;
+  /* Chrome/Opera/Safari */
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+  /* Firefox 19+ */
+  &::-moz-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+  /* IE 10+ */
+  &:-ms-input-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+  /* Firefox 18- */
+  &:-moz-placeholder {
+    opacity: 1;
+    color: $color;
+  }
 }

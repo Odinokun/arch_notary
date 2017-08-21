@@ -1,0 +1,79 @@
+extends ../_template
+
+block variables
+  - var title = 'Контакти'
+
+
+block content
+  include ../elements/stickyHeader
+  
+  //begin content
+  section.main.contacts
+    .container
+      header.top-header
+        .top-header__left
+          h2.top-header__title Контакти
+        .top-header__right
+          p.top-header__text Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития. Равным образом укрепление и развитие структуры в значительной степени обуславливает создание позиций. Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития.
+
+      section.contacts__body
+        .contacts__left
+          .contacts__connect-wrap
+            header.contacts__header
+              h2.contacts__title Контакти для связи
+            span.contacts__connect
+              svg
+                use(xlink:href="assets/img/sprite.svg#mobile")
+              a(href="tel:+38 096 237 42 33") 096-237-42-33
+            span.contacts__connect
+              svg
+                use(xlink:href="assets/img/sprite.svg#phone")
+              a(href="tel:044 220 42 21") 044-220-42-21
+            span.contacts__connect
+              svg
+                use(xlink:href="assets/img/sprite.svg#fax")
+              a(href="tel:044 220 42 21") 044-220-42-21
+            span.contacts__connect
+              svg
+                use(xlink:href="assets/img/sprite.svg#mail")
+              a(href="mailto:olcha@ukr.net") olcha@ukr.net
+            span.contacts__connect
+              svg
+                use(xlink:href="assets/img/sprite.svg#adress")
+              a(href="https://goo.gl/maps/YwykDz1M9hS2" target="_blank" rel="nofollow noopener noreferrer") м.Киев, Дарницький б-р, 8-В, оф.182
+
+              
+          .contacts__schedule-wrap
+            header.contacts__header
+              h2.contacts__title Pозклад роботи
+
+            .contacts__schedule
+              span пн-пт: 09:00 - 18:00
+              br
+              span сб-нд: за попередньою домовленістю
+
+            span.contacts__ahtung Увага!
+            p Бажано заздалегидь зателефонувати до нотарыуса, та домовитися про зустрич, для уникнення накладок з иншими клиентами и для сокращение времени Вашего ожидания (эта фраза требует корректировки).
+
+
+
+        .contacts__right
+          .contacts__form-wrap
+            header.contacts__header
+              h2.contacts__title Надийшлить повидомлення для нотариуса
+
+            span.contacts__form-title Свои вопросы нотариусу Вы также можете задавать заполнив форму.
+
+            form.contacts__form
+              input(type="text" placeholder="Ваше призвище та имя*" required)
+              input(type="text" placeholder="Ваш телефон*" required)
+              input(type="mail" placeholder="Ваш email")
+              textarea(rows="5" placeholder="Ваше питання до нотариуса...*" required)
+              span.contacts__form-note * отмеченые поля обязательные для заполнения.
+              button.btn Відправити
+
+        .contacts__map#contacts__map
+
+
+    include ../sections/footer
+  //end   content

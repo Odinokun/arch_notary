@@ -1,8 +1,4 @@
 $(function() {
-  /////
-  // ***** BEGIN Standarts scripts *****
-  /////
-
   // begin require SVG for IE
   require('./modules/svg4everybody')();
   // end   require SVG for IE
@@ -44,7 +40,7 @@ $(function() {
   require('./modules/bubbleFooter')();
   // end   всплывающий подвал
 
-  /////
-  // ***** END Standarts scripts *****
-  /////
+  // begin стилизация карты в контактах
+  require('./modules/map')();
+  // end   стилизация карты в контактах
 });

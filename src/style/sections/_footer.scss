@@ -1,13 +1,15 @@
 .footer {
   position: fixed;
+  z-index: 10;
   right: 0;
   bottom: -1000px;
   left: 0;
   display: flex;
   justify-content: center;
-  padding: 8px 10px;
+  padding: 10px 10px 8px 10px;
   transition: bottom 3s;
   transition-delay: 7s;
+  background-color: #81b3b2;
   box-shadow: 0 1px 10px 0 $shadow;
   &.active {
     bottom: 0;
@@ -17,6 +19,7 @@
   background-color: #81b3b2;
   background-image: url('../img/bg-green.jpg');
 }
+.article .footer,
 .services .footer {
   background-color: #d5d0bd;
   background-image: url('../img/bg-bezh.jpg');
@@ -24,6 +27,15 @@
 .blog .footer {
   background-color: #b1ae7b;
   background-image: url('../img/bg-olive.jpg');
+}
+.links .footer {
+  background-color: #cdcdcd;
+  background-image: url('../img/bg-gray.jpg');
+}
+.contacts .footer {
+  box-shadow: 0 1px 10px 0 $highlight;
+  background-color: #3d3d3d;
+  background-image: url('../img/bg-black.jpg');
 }
 .copyright__link,
 .copyright {

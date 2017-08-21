@@ -3,10 +3,13 @@
 // закоментить перед prodaction
 $(document).ready(function ($) {
   pageWidget([
-    'index',
-    'services',
+    'article',
     'blog',
-    'inner'
+    'contacts',
+    'index',
+    'inner',
+    'links',
+    'services',
     ]);
 });
 

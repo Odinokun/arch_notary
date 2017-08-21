@@ -1,38 +1,35 @@
-.blog__list {
-  width: 75%;
-  padding-right: 50px;
-
-  @include max(1023) {
-    width: 100%;
-    padding-right: 0;
+.article {
+  background-color: #d5d0bd;
+  background-image: url('../img/bg-bezh.jpg');
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    pointer-events: none;
+    border: 2px dashed #948c70;
   }
 }
-.blog__article {
-  position: relative;
-  overflow: hidden;
-  max-height: 450px;
-  margin-bottom: 40px;
+.article__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
 
-  @include max(640) {
-    display: flex;
-    flex-direction: column;
-    max-height: 700px;
-  }
-}
-.blog__article-shadow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  box-shadow: inset 0 -150px 150px -50px #b8b582;
-}
-.blog__article-pic-wrap {
+.article__pic--left {
   float: left;
-  width: 250px;
-  height: 250px;
   margin: 0 25px 10px 0;
+}
+.article__pic--right {
+  float: right;
+  margin: 0 0 10px 25px;
+}
+.article__pic {
+  width: 40%;
   padding: 5px;
   background-color: $light;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
@@ -44,21 +41,17 @@
     float: none;
     width: 100%;
     max-width: 455px;
-    margin: 0 auto 10px;
+    margin: 0 0  20px 0;
+  }
+  img {
+    display: block;
+    width: 100%;
   }
 }
-.blog__article-pic {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
-.blog__article-header {
+.article__header {
   position: relative;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-bottom: 17px;
   &::before {
     position: absolute;
@@ -72,21 +65,25 @@
     background-position: 0 0;
   }
 }
-.blog__article-header {
+.article__header {
   @include max(640) {
     overflow: visible;
 
     order: -1;
   }
 }
-.blog__article-title {
+.article__title {
   font-family: $font-title;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.2;
+
+  @include max(1023) {
+    font-size: 30px;
+  }
 }
-.blog__article-autor,
-.blog__article-header-tag {
-  font-size: 11px;
+.article__autor,
+.article__header-tag {
+  font-size: 12px;
   text-transform: uppercase;
   a {
     position: relative;
@@ -114,7 +111,7 @@
   }
 }
 
-.blog__article-date {
+.article__date {
   display: flex;
   float: left;
   flex-direction: column;
@@ -131,18 +128,9 @@
     color: $text-light;
   }
 }
-.blog__article-text {
+.article__text {
   p {
     font-size: 16px;
     line-height: 1.35;
   }
-}
-.blog__article-link-more {
-  font-family: $font-title;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  text-align: center;
 }

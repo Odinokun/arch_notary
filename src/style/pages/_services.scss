@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding-bottom: 20px;
 
   @include max(1023) {
     justify-content: space-around;

@@ -22,9 +22,6 @@
     background-position: 0 0;
   }
 }
-// .blog-section__aside-header {
-//   overflow: hidden;
-// }
 .blog__aside-title {
   font-family: $font-title;
   font-size: 32px;
@@ -34,8 +31,6 @@
 .blog__aside-subtitle {
   font-family: $font;
   font-size: 12px;
-  // line-height: 1;
-  // margin: 0;
   text-transform: uppercase;
 }
 .blog__aside-item {
@@ -49,7 +44,6 @@
   max-width: 470px;
   position: relative;
   overflow: hidden;
-  // width: 100%;
 }
 .blog__search-input {
   width: 100%;

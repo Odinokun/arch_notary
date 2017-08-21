@@ -1,0 +1,131 @@
+.links {
+  background-color: #cdcdcd;
+  background-image: url('../img/bg-gray.jpg');
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    pointer-events: none;
+    border: 2px dashed #8b8b8b;
+  }
+}
+.links__body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: -1.2%;
+  margin-left: -1.2%;
+
+  @include max(880) {
+    justify-content: space-between;
+    margin: 0;
+  }
+  @include max(640) {
+    padding-bottom: 50px;
+  }
+}
+.links-item {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  max-height: 450px;
+  margin-bottom: 50px;
+
+  @include max(880) {
+    width: 47%;
+  }
+  @include max(640) {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  &:hover {
+    .links-item__more span::before {
+      width: 100%;
+    }
+    .links-item__title {
+      color: $highlight;
+    }
+  }
+}
+.links-item__link-more {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.links-item__shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  box-shadow: inset 0 -150px 150px -50px #cdcdcd;
+}
+.links-item__header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+  &::before {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 11px;
+    content: '';
+    background-image: url('../img/underline.jpg');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+}
+.links-item__title {
+  font-family: $font-title;
+  font-size: 30px;
+  margin: 0;
+  transition: color .5s;
+
+  @include max(640) {
+    text-align: center;
+  }
+}
+.links-item__more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: $highlight;
+  span {
+    font-family: $font-title;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 0;
+      height: 2px;
+      margin: auto;
+      content: '';
+      transition: width .5s;
+      background-color: $highlight;
+    }
+  }
+}
+.links-item__shadow,
+.links-item__text {
+  @include max(640) {
+    display: none;
+  }
+}
