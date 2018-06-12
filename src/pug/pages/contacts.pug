@@ -6,7 +6,7 @@ block variables
 
 block content
   include ../elements/stickyHeader
-  
+
   //begin content
   section.main.contacts
     .container
@@ -42,7 +42,7 @@ block content
                 use(xlink:href="assets/img/sprite.svg#adress")
               a(href="https://goo.gl/maps/YwykDz1M9hS2" target="_blank" rel="nofollow noopener noreferrer") м.Киев, Дарницький б-р, 8-В, оф.182
 
-              
+
           .contacts__schedule-wrap
             header.contacts__header
               h2.contacts__title Pозклад роботи
@@ -77,3 +77,129 @@ block content
 
     include ../sections/footer
   //end   content
+  include ../sections/scripts
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdGbaaf94NCuCkoH98Ry12HA59U0eTqIA&callback=initMap" async defer)
+  script.
+    // begin contacts-map
+    var map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('contacts__map'), {
+        center: {lat: 50.4649, lng: 30.6094},
+        zoom: 18,
+        // theme name - Discreet
+        styles: [{
+          "featureType": "administrative",
+          "elementType": "all",
+          "stylers": [{"visibility": "off"}]
+        }, {
+          "featureType": "administrative",
+          "elementType": "geometry.stroke",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "administrative",
+          "elementType": "labels",
+          "stylers": [{"visibility": "on"}, {"color": "#716464"}, {"weight": "0.01"}]
+        }, {
+          "featureType": "administrative.country",
+          "elementType": "labels",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "landscape.natural",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "landscape.natural.landcover",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi",
+          "elementType": "geometry.fill",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi",
+          "elementType": "geometry.stroke",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi",
+          "elementType": "labels.text",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi",
+          "elementType": "labels.text.stroke",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "poi.attraction",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [{"visibility": "off"}]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "geometry.fill",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "geometry.stroke",
+          "stylers": [{"visibility": "simplified"}, {"color": "#a05519"}, {"saturation": "-13"}]
+        }, {
+          "featureType": "road.local",
+          "elementType": "all",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "transit",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "simplified"}]
+        }, {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "on"}]
+        }, {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [{"visibility": "simplified"}, {"color": "#84afa3"}, {"lightness": 52}]
+        }, {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [{"visibility": "on"}]
+        }, {"featureType": "water", "elementType": "geometry.fill", "stylers": [{"visibility": "on"}]}]
+      });
+
+      var marker = new google.maps.Marker({
+        // Определяем позицию маркера
+        position: {
+          lat: 50.465009,
+          lng: 30.609100
+        },
+        map: map,
+        title: 'Приватний нотариус Гордієнко Ольга Валеріївна',
+        icon: 'assets/img/marker.png',
+      });
+    }
+    // end   contacts-map
