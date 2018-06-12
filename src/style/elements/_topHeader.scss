@@ -52,6 +52,7 @@
   line-height: 1;
   margin-bottom: 5px;
   white-space: nowrap;
+  text-transform: uppercase;
 
   @include max(1023) {
     font-size: 90px;

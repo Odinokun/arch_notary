@@ -1,9 +1,10 @@
 .blog__aside {
   width: 25%;
   margin-bottom: 30px;
+
   @include max(1023) {
-    padding-top: 20px;
     width: 100%;
+    padding-top: 20px;
   }
 }
 .blog__aside-header {
@@ -27,6 +28,7 @@
   font-size: 32px;
   line-height: 1.2;
   margin: 0;
+  text-transform: uppercase;
 }
 .blog__aside-subtitle {
   font-family: $font;
@@ -35,15 +37,16 @@
 }
 .blog__aside-item {
   margin-bottom: 30px;
+
   @include max(1023) {
     margin-bottom: 10px;
   }
 }
 .blog__search-form {
-  width: 100%;
-  max-width: 470px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 470px;
 }
 .blog__search-input {
   width: 100%;
@@ -85,12 +88,11 @@
   position: absolute;
   top: 11px;
   right: 13px;
+  fill: $light;
   width: 22px;
   height: 22px;
   transition: fill .5s;
   pointer-events: none;
-
-  fill: $light;
 }
 
 

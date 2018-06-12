@@ -83,6 +83,7 @@
   font-family: $font-title;
   font-size: 32px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 .blog__article-autor,
 .blog__article-header-tag {
@@ -120,14 +121,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  width: 66px;
   margin: 5px 20px 0 0;
   padding: 10px 2px 8px 2px;
   background-color: $text;
   span {
-    font-family: $font-title;
+    font-family: $font-title-2;
     font-size: 16px;
     line-height: 1.4;
+    text-transform: uppercase;
     color: $text-light;
   }
 }
@@ -145,4 +147,5 @@
   left: 0;
   display: block;
   text-align: center;
+  text-transform: uppercase;
 }

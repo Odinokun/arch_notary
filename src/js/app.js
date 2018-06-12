@@ -1,4 +1,9 @@
 $(function() {
+
+  // begin preloader
+  require('./modules/preloader')();
+  // end   preloader
+  
   // begin require SVG for IE
   require('./modules/svg4everybody')();
   // end   require SVG for IE
@@ -44,7 +49,11 @@ $(function() {
   require('./modules/customUl')();
   // end   активация кастомизированного пункта списка при клике
 
+  // begin маска телефона в inputs
+  require('./modules/maskedinput')();
+  // end   маска телефона в inputs
+
   // begin стилизация карты в контактах
-  require('./modules/map')();
+  // require('./modules/map')();
   // end   стилизация карты в контактах
 });

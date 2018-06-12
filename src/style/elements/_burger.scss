@@ -14,13 +14,14 @@
   }
 }
 .burger__menu {
-  font-family: $font-title, sans-serif;
+  font-family: $font-title;
   font-size: 20px;
   position: absolute;
   top: 7px;
   right: -90px;
   transition: right .5s, opacity .4s;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: $text-light;
 
   @include max(375) {

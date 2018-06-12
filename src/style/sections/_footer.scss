@@ -1,6 +1,6 @@
 .footer {
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   right: 0;
   bottom: -1000px;
   left: 0;
@@ -19,6 +19,7 @@
   background-color: #81b3b2;
   background-image: url('../img/bg-green.jpg');
 }
+.about .footer,
 .servis .footer,
 .article .footer,
 .services .footer {
@@ -34,16 +35,18 @@
   background-image: url('../img/bg-gray.jpg');
 }
 .contacts .footer {
-  box-shadow: 0 1px 10px 0 $highlight;
   background-color: #3d3d3d;
   background-image: url('../img/bg-black.jpg');
+  box-shadow: 0 1px 10px 0 $highlight;
 }
 .copyright__link,
 .copyright {
-  font-family: $font-title;
+  font-family: $font-title-2;
+  font-size: 16px;
   transition: all .5s;
   text-decoration: none;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: $text-light;
   text-shadow: 2px 2px 2px $shadow;
   &:hover {

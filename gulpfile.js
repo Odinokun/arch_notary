@@ -33,6 +33,7 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:app-browserify',
     'copy:js',
+    'copy:css',
     'copy:fonts',
     'copy:php',
     'copy:video'

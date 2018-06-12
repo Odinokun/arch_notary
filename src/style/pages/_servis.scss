@@ -23,6 +23,7 @@
   font-size: 50px;
   line-height: 1.15;
   text-align: center;
+  text-transform: uppercase;
 
   @include max(425) {
     font-size: 36px;
@@ -37,6 +38,7 @@
   line-height: 1.2;
   display: inline-block;
   margin-bottom: 20px;
+  text-transform: uppercase;
 
   @include max(425) {
     font-size: 24px;

@@ -4,6 +4,7 @@
 $(document).ready(function ($) {
   pageWidget([
     'article',
+    'about',
     'blog',
     'contacts',
     'index',

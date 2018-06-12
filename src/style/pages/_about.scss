@@ -1,0 +1,134 @@
+.about {
+  background-color: #d5d0bd;
+  background-image: url('../img/bg-bezh.jpg');
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    pointer-events: none;
+    border: 2px dashed #948c70;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+}
+.about__wrap {
+  padding: 60px 0;
+}
+.about__pic {
+  float: left;
+  width: 40%;
+  margin: 0 25px 10px 0;
+  padding: 5px;
+  background-color: $light;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .6),
+  23px 0 20px -23px rgba(0, 0, 0, .6),
+  inset 0 0 40px rgba(0, 0, 0, .1);
+
+  @include max(640) {
+    float: none;
+    width: 100%;
+    max-width: 455px;
+    margin: 0 auto  20px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.about__header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  @include max(640) {
+    overflow: visible;
+
+    order: -1;
+  }
+  &::before {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 11px;
+    content: '';
+    background-image: url('../img/underline.jpg');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+}
+.about__header-name {
+  font-family: $font-title;
+  font-size: 46px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  @include max(640) {
+    text-align: center;
+  }
+}
+.about__header-position {
+  font-family: $font-title;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  @include max(640) {
+    text-align: center;
+  }
+}
+.about__gallery {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-right: -2%;
+
+  @include max(1023) {
+    margin-right: -3%;
+  }
+  @include max(750) {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+}
+.about__gallery-item {
+  width: 23%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: $light;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .6),
+  23px 0 20px -23px rgba(0, 0, 0, .6),
+  inset 0 0 40px rgba(0, 0, 0, .1);
+
+  @include max(1023) {
+    width: 31%;
+  }
+  @include max(750) {
+    width: 48%;
+    margin-right: 0;
+  }
+  @include max(500) {
+    padding: 2px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.about__gallery-item-wrap {
+  outline: none;
+  a {
+    outline: none;
+  }
+}

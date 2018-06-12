@@ -10,5 +10,5 @@ module.exports = [
   // './node_modules/animate.css/animate.css',
 
   // include fancybox3
-  // './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+  './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
 ];

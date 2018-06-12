@@ -1,7 +1,7 @@
 @font-face {
-  font-family: AstakhovFirstOneStripe;
-  src:  url('../fonts/AstakhovFirstOneStripe.woff2') format('woff2'),
-        url('../fonts/AstakhovFirstOneStripe.woff')  format('woff');
+  font-family: GoboldCYR-LAT;
+  src:  url('../fonts/GoboldCYR-LAT.woff2') format('woff2'),
+        url('../fonts/GoboldCYR-LAT.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -34,14 +34,6 @@
   font-family: Verdana-Bold;
   src:  url('../fonts/Verdana-Bold.woff2') format('woff2'),
         url('../fonts/Verdana-Bold.woff')  format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Verdana-Italic;
-  src:  url('../fonts/Verdana-Italic.woff2') format('woff2'),
-        url('../fonts/Verdana-Italic.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }
