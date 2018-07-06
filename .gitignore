@@ -42,8 +42,8 @@ _template/
 node_modules/
 bower/
 bower_components/
-#dist
-#build
+dist
+build
 
 ### My files ###
 *.zip
