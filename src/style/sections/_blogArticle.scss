@@ -1,11 +1,11 @@
 .blog__list {
-  width: 75%;
-  padding-right: 50px;
+  //width: 75%;
+  //padding-right: 50px;
 
-  @include max(1023) {
+  //@include max(1023) {
     width: 100%;
-    padding-right: 0;
-  }
+    //padding-right: 0;
+  //}
 }
 .blog__article {
   position: relative;
