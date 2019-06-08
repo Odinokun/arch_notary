@@ -1,4 +1,23 @@
-// begin header
-header.header
-  h1 header
-// end   header
+//begin sticky header
+header.sticky-header
+  .container
+    include ../elements/burger
+    a.header__phone(href="tel:+380962374233")
+      svg.header__phone-icon
+        use(xlink:href="assets/img/sprite.svg#phone")
+      span 096-237-42-33
+    nav.menu
+      ul.menu__list
+        li.menu__item
+          a(href="about.html").menu__link Про нотаріуса
+        li.menu__item
+          a(href="services.html").menu__link Послуги
+        li.menu__item
+          a(href="blog.html").menu__link Блог
+        li.menu__item
+          a(href="/").menu__link Головна
+        li.menu__item
+          a(href="links.html").menu__link Корисні посилання
+        li.menu__item
+          a(href="contacts.html").menu__link Контакти
+//end sticky header
